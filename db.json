@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": "4ed4",
+      "email": "vishnu@gmail.com",
+      "password": "vishnu123",
+      "username": "vishnu"
+    }
+  ],
+  "profiles": [],
+  "orders": [],
+  "cart": [
+    {
+      "id": "95ae",
+      "cartItems": [],
+      "totalAmount": 0
+    }
+  ]
+}

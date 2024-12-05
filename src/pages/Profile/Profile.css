@@ -1,0 +1,145 @@
+/* General styles for the profile container */
+.profile {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-container p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* View Orders Button */
+button:nth-of-type(1) {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+/* Logout Button */
+button:nth-of-type(2) {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+/* Orders Modal */
+.orders-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.orders-modal h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.orders-modal p {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.orders-modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.orders-modal ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.orders-modal ul li p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Close Orders Modal Button */
+.orders-modal button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.orders-modal button:hover {
+  background-color: #0056b3;
+}
+
+/* Backdrop for the modal */
+.orders-modal::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Loading state */
+.profile > div {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Styling for orders in the modal */
+.orders-modal ul li p {
+  font-size: 14px;
+  color: #333;
+}
+
+.orders-modal ul li p:nth-child(2) {
+  font-weight: bold;
+  color: #444;
+}
+
+.orders-modal ul li p:nth-child(3) {
+  color: #888;
+}

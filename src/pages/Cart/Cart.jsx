@@ -121,9 +121,9 @@ const Cart = () => {
                 <div className="cart-items-title cart-items-item">
                   <img src={item.image} alt="" />
                   <p>{item.name}</p>
-                  <p>${item.price}</p>
+                  <p>₹{item.price}</p>
                   <p>{cartitems[item._id]}</p>
-                  <p>${item.price * cartitems[item._id]}</p>
+                  <p>₹{item.price * cartitems[item._id]}</p>
                   <p onClick={() => handleRemoveFromCart(item._id)} className="cross">
                     x
                   </p>
@@ -140,15 +140,15 @@ const Cart = () => {
           <h2>Cart Total</h2>
           <div className="cart-total-details">
             <p>Subtotal</p>
-            <p>${gettotalcartAmount()}</p>
+            <p>₹{gettotalcartAmount()}</p>
           </div>
           <div className="cart-total-details">
             <p>Delivery Fee</p>
-            <p>${gettotalcartAmount() === 0 ? 0 : 2}</p>
+            <p>₹{gettotalcartAmount() === 0 ? 0 : 2}</p>
           </div>
           <div className="cart-total-details">
             <p>Total</p>
-            <p>${gettotalcartAmount() === 0 ? 0 : gettotalcartAmount() + 2}</p>
+            <p>₹{gettotalcartAmount() === 0 ? 0 : gettotalcartAmount() + 2}</p>
           </div>
           <button onClick={() => navigate('/order')}>Proceed To Checkout</button>
           <button onClick={handleSaveCartToServer}>Save Cart</button>
